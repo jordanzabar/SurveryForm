@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Moxie's Survery Form</title>
+</head>
+<body>   
+    <div class="bg"></div>  
+    <section class="survey">
+        <h1 id="title">Moxie's Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve
+            our restaurant
+        </p>
+        <form action="" id="survey-form">
+            <div style="float:left;padding-bottom:20px;">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+            <div style="float:right;">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <br style="clear:both;" />
+        <div style="float:right">
+            <label for="age" id="number-label">Age</label>
+            <input type="number" id="number" name="age" min="10" max="100" placeholder="Enter your age">
+        </div>
+        <div style="float:left;">
+        <label for="age">Favourtie Appitizer</label>
+        <select name="dropdown" id="dropdown">
+            <option value="nachos">Nachos</option>
+            <option value="spinachDip">Spinach Dip</option>
+            <option value="wings">Wings</option>
+            <option value="soup">Soup</option>
+            <option value="calamari">Calamari</option>
+        </select>
+    </div>
+    <br style="clear:both;" />
+    <label class="qualityLabel" for="quality">Food Quality</label>
+    <div>       
+        <input class="radioBtn" type="radio" name="quality" value="excellent"><span>Excellent</span>
+        </div>       
+        <div>
+        <input class="radioBtn" type="radio" name="quality" value="average"><span>Average</span>
+    </div>   
+    <div>
+        <input class="radioBtn" type="radio" name="quality" value="poor"><span>Poor</span>
+    </div>
+    <label class="serviceLabel" for="service">Service Quality</label>
+    <div>
+        <input type="checkbox" name="service" class="serviceBox" value="excellent"><span>Excellent</span>
+    </div>
+    <div>
+        <input type="checkbox" name="service" class="serviceBox" value="average"><span>Average</span>
+    </div>
+        <div>
+            <input type="checkbox" name="service" class="serviceBox" value="poor"><span>Poor</span>
+        </div>
+        <div class="suggestions">
+            <p>Any comments or suggestions?</p>
+        <textarea name="" id="comments" cols="30" rows="8"></textarea>
+        <div class="button">
+            <button type="submit" id="submit">Submit</button>
+            </div>
+        </div>
+        </form>
+    </section>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>

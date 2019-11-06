@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.survey{
+    z-index:1;
+    text-align: center;
+    color: #2d3739;
+    padding-top: 8px;
+}
+
+.bg{
+    position: absolute;
+    z-index:-1;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/background.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+#title{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+input, label, select{
+    display: block;
+    margin: 0;
+}
+
+label{
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+#survey-form{
+    display: inline-block;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 500px;
+    height: 455px;
+    opacity: 0.8;   
+}
+
+div{
+    display: inline-block;  
+}
+
+#number{
+    width:160px;
+}
+
+.radioBtn{
+    display: inline-block;
+    margin: 0;
+    justify-content: space-around;  
+}
+
+input[type="radio"]{
+    margin: 0 10px 0 10px;
+  }
+
+input[type="checkbox"]{
+    margin: 0 10px 0 10px;
+  }
+
+.radioLabel{
+    display: inline-block;   
+}
+
+.qualityLabel{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.serviceBox{
+    display: inline-block;
+    margin: 0;
+}
+
+.serviceLabel{
+    text-align: center;
+    padding-top: 20px;    
+}
+
+.checkBox{
+    float: right;
+    margin-bottom: 20px;
+}
+
+.suggestions{
+    padding-top: 20px;
+    position: relative;
+   display: inline-block;
+}
+
+#submit{
+  height: 20px;
+  width: 100px;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(max-width: 550px){
+    #survey-form{
+        width: 300px;
+        height: 400px;
+    }
+    input{
+        width:120px;
+    }
+    label{
+        font-size: 12px;
+    }
+    #number{
+        width: 120px;
+    }
+    input[type="radio"]{
+        margin: 0 10px 0 10px;  
+    }
+    .radioBtn{
+          width: 10px;
+    }
+    div > span{
+          font-size: 12px;
+    }
+    .serviceBox{
+        width: 10px;
+    }
+    .bg{
+        height: 600px;
+    }
+    .suggestions p{
+        font-size: 12px;
+    }
+    #comments{
+        height: 80px;
+    }
+}
